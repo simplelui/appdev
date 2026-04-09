@@ -33,7 +33,7 @@ body, html {
 .threat-kpi { border-top: 3px solid #ef4444; }
 
 .card { background: #0d0d0d; border: 1px solid #1a1a1a; padding: 20px; border-radius: 8px; }
-.card h3 { font-size: 11px; color: #3b82f6; margin: 0 0 15px 0; border-bottom: 1px solid #1a1a1a; padding-bottom: 10px; }
+.card h3 { font-size: 11px; color: #ffffff; margin: 0 0 15px 0; border-bottom: 1px solid #1a1a1a; padding-bottom: 10px; }
 .chart-box { height: 300px; }
 .dual-row { display: flex; gap: 20px; }
 .small-card { flex: 1; }
