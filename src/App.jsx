@@ -75,7 +75,7 @@ function App() {
       <header className="dashboard-header">
         <div className="title-area">
           <h1>SDN NETWORK MONITORING</h1>
-          <p>Made by</p>
+          <p>Midterm AppDev</p>
         </div>
         <div className="control-area">
           <select className="ui-input" value={protocolFilter} onChange={(e) => setProtocolFilter(e.target.value)}>
@@ -95,12 +95,12 @@ function App() {
         <section className="column-charts">
           <div className="kpi-strip">
             <div className="kpi"><span>LOGS</span><strong>{totalLogs.toLocaleString()}</strong></div>
-            <div className="kpi"><span>AVG</span><strong>{avgBytes}B</strong></div>
+            <div className="kpi"><span>AVG</span><strong>{avgBytes} B</strong></div>
             <div className="kpi threat-kpi"><span>THREATS</span><strong>{threatCount}</strong></div>
           </div>
 
           <div className="card telemetry-card">
-            <h3>TELEMETRY STREAM</h3>
+            <h3>LINE TELEMETRY GRAPH</h3>
             <div className="chart-box">
               <Line 
                 data={{
@@ -118,7 +118,7 @@ function App() {
 
           <div className="dual-row">
             <div className="card small-card">
-              <h3>PROTOCOLS</h3>
+              <h3>BAR GRAPH</h3>
               <div className="chart-box">
                 <Bar 
                   data={{
@@ -137,7 +137,7 @@ function App() {
               </div>
             </div>
             <div className="card small-card">
-              <h3>RATIO</h3>
+              <h3>PIE GRAPH</h3>
               <div className="chart-box">
                 <Pie 
                   data={{ labels: ['Normal', 'Attack'], datasets: [{ data: [totalLogs - threatCount, threatCount], backgroundColor: ['#10b981', '#ef4444'], borderWidth: 0 }] }} 
