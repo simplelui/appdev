@@ -74,7 +74,7 @@ function App() {
 
       <header className="dashboard-header">
         <div className="title-area">
-          <h1>GROWKNEE SDN NETWORK MONITORING</h1>
+          <h1>SDN NETWORK MONITORING</h1>
           <p>Made by</p>
         </div>
         <div className="control-area">
