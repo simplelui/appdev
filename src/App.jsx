@@ -4,7 +4,8 @@ import { Bar, Line, Pie } from 'react-chartjs-2'
 import 'chart.js/auto'
 import './App.css' 
 import LiveThreatFeed from './components/livethreatfeed'
-
+import AISecurityAnalyst from './components/Analy';
+  
 function App() {
   const [data, setData] = useState([])
   const [loading, setLoading] = useState(true)
@@ -151,6 +152,18 @@ function App() {
         {/* RIGHT COLUMN: LIVE THREAT STREAM */}
         <aside className="column-feed">
           <div className="feed-container">
+            
+            {/* --- AI COMPONENT INJECTED HERE --- */}
+            <AISecurityAnalyst 
+              currentLogs={filteredData} 
+              kpis={{
+                totalRecords: totalLogs,
+                avgBytes: avgBytes,
+                maxZScore: 0
+              }} 
+            />
+            {/* ---------------------------------- */}
+
             <LiveThreatFeed />
           </div>
         </aside>
