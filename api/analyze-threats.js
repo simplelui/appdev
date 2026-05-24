@@ -1,4 +1,3 @@
-// File: api/analyze-threats.js
 import { GoogleGenAI } from "@google/genai";
 
 export default async function handler(req, res) {
@@ -33,7 +32,7 @@ export default async function handler(req, res) {
 
     // RULE 5: Execute the API call to Gemini
     const response = await ai.models.generateContent({
-      model: "gemini-1.5-flash",
+      model: "gemini-2.5-flash", // Updated to the active 2026 model endpoint
       contents: prompt,
     });
 
